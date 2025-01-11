@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 import sys
 
-for i in range(1, len(sys.argv)):  # Start at index 1
-    print(sys.argv[i])
+def factorial(n):
+    result = 1
+    while n > 1:
+        result *= n
+    return result
+
+f = factorial(int(sys.argv[1]))
+print(f)
